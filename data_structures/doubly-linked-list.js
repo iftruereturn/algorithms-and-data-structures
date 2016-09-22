@@ -128,6 +128,8 @@ DoublyLinkedList.prototype.copyTo = function(array, arrayIndex = 0) {
   }
 };
 
+// Variant with function
+/*
 DoublyLinkedList.prototype[Symbol.iterator] = function() {
   let head = this.head;
 
@@ -151,10 +153,9 @@ DoublyLinkedList.prototype[Symbol.iterator] = function() {
     }
   }
 };
-
+*/
 
 // Variant with generator
-/*
 DoublyLinkedList.prototype[Symbol.iterator] = function*() {
   let current = this.head;
 
@@ -163,7 +164,7 @@ DoublyLinkedList.prototype[Symbol.iterator] = function*() {
     current = current.next;
   }
 }
-*/
+
 
 // -----------------------------------------------------
 // example

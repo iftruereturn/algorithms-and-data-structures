@@ -85,7 +85,7 @@ LinkedList.prototype.remove = function(value) {
   return false;
 };
 
-
+// Variant with function
 LinkedList.prototype[Symbol.iterator] = function() {
   let head = this.head;
 
