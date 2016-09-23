@@ -110,7 +110,6 @@ LinkedList.prototype[Symbol.iterator] = function() {
   }
 };
 
-
 // Variant with generator
 /*
 LinkedList.prototype[Symbol.iterator] = function*() {
@@ -123,9 +122,12 @@ LinkedList.prototype[Symbol.iterator] = function*() {
 }
 */
 
+module.exports = LinkedList;
+
 // -----------------------------------------------------
 // example
 
+/*
 let ll = new LinkedList();
 ll.add(10);
 ll.add(20);
@@ -153,4 +155,4 @@ ll.clear();
 console.log(ll.count); // 0
 let arr3 = [...ll];
 console.log(arr3); // []
-
+*/

@@ -66,7 +66,7 @@ DoublyLinkedList.prototype.removeLast = function() {
       this.tail = this.tail.previous;
     }
 
-    this.count++;
+    this.count--;
   }
 };
 
@@ -165,10 +165,12 @@ DoublyLinkedList.prototype[Symbol.iterator] = function*() {
   }
 }
 
+module.exports = DoublyLinkedList;
 
 // -----------------------------------------------------
 // example
 
+/*
 let dll = new DoublyLinkedList();
 dll.add(10);
 dll.add(20);
@@ -205,3 +207,4 @@ dll.addFirst(60);
 dll.removeFirst();
 let arr4 = [...dll];
 console.log(arr4); // [ 40 ]
+*/
