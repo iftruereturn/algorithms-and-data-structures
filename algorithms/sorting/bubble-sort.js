@@ -9,14 +9,14 @@ function swap(items, left, right) {
 function bubbleSort(items) {
   let swapped;
 
-  let operationCounter = 0;
+  // let operationCounter = 0;
 
   do {
     swapped = false;
 
     for (let i = 1; i < items.length; i++) {
 
-      operationCounter++;
+      // operationCounter++;
 
       if (items[i - 1] - items[i] > 0) {
         swap(items, i - 1, i);
@@ -25,7 +25,7 @@ function bubbleSort(items) {
     }
   } while (swapped);
 
-  console.log(operationCounter);
+  // console.log(operationCounter);
 }
 
 // slightly optimized
@@ -33,13 +33,13 @@ function bubbleSort2(items) {
   let swapped;
   let length = items.length;
 
-  let operationCounter = 0;
+  // let operationCounter = 0;
 
   for (let i = 0; i < items.length; i++) {
     let swapped = false;
 
     for (let j = 1; j < length; j++) {
-      operationCounter++;
+      // operationCounter++;
 
       if (items[j - 1] - items[j] > 0) {
         swap(items, j - 1, j);
@@ -54,15 +54,17 @@ function bubbleSort2(items) {
     length--;
   }
 
-  console.log(operationCounter);
+  // console.log(operationCounter);
 }
+
+module.exports = bubbleSort2;
 
 
 
 //---------------------------------------------------------
 // example
 
-
+/*
 let arr = [20, 5, 99, 1, 24, 77, 80, 33, 39, 60];
 console.log(arr);
 bubbleSort(arr);
@@ -86,3 +88,4 @@ let arr4 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 console.log(arr4);
 bubbleSort2(arr4);
 console.log(arr4);
+*/
