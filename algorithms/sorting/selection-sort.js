@@ -36,9 +36,9 @@ module.exports = selectionSort;
 //---------------------------------------------------------
 // example
 
-
+/*
 let arr = [8, 1, 4, 5, 2, 3, 7, 6, 0, 9];
 console.log(arr);
 selectionSort(arr);
 console.log(arr);
-
+*/
