@@ -1,4 +1,3 @@
-
 function mergeSort(items) {
   if (items.length <= 1) {
     return;
